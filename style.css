@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(135deg, #027760, #000000);
+  color: #ccc;
+}
+.container{
+  max-width: 800px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  border-style: solid;
+  border-color: rgb(14, 157, 145);
+  border-width: thin;
+  text-align: center;
+}
+.container img {
+    width: 50px;
+    margin: 0px auto;
+}
+.container .title{
+  font-size: 30px;
+  font-weight: 500;
+  position: relative;
+  text-align: center;
+  padding-bottom: 20px;
+  color: rgb(206, 248, 234);
+}
+
+.container .title2{
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    padding-bottom: 20px;
+    color: #ccc;
+}
+.content form .user-details,.course-details{
+  flex-wrap: wrap;
+  text-align: left;
+  justify-content: space-between;
+  margin: 12px 0 12px 0;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: 100%;
+  text-align: left;
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+form .input-box1{
+    text-align: left;
+    display: block;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.error {
+  color: red;
+  font-size: 90%;
+}
+
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.user-details .input-box textarea,select{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: #35aca4;
+}
+ 
+form input[type="radio"]{
+   display: inline;
+} 
+form .button{
+   height: 45px;
+   margin: 35px 0
+}
+
+form .button input{
+   height: 100%;
+   width: 100%;
+   border-radius: 5px;
+   margin-bottom: 2px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: rgb(3, 33, 33)
+ }
+ form .button input:hover{
+  background: rgb(13, 92, 77);
+  
+}
+
+

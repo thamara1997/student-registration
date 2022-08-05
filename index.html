@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+	  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <img src="images/logo.png" alt="uop">
+    <div class="content">
+      <div class="title">FACULTY REGISTRATION UNIT</div>
+      <div class="title2"> Personal Information </div>
+      <form action="" id="form" name="contactForm"  method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Name with initials</span>
+            <input type="text" id="fullname" placeholder="Enter your name" name="name">
+            <div class="error" id="nameErr"></div>
+          </div>
+          
+          <div class="input-box1">
+            <span class="details">Gender</span>
+            <p><input type="radio" id="gender" name="gender" value="male"/>  Male <br> 
+            <input type="radio" id="gender" name="gender" value="female"/>  Female </p>
+            <div class="error" id="genderErr"></div>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Date Of Birth</span>
+            <input type="date" name="birthDate">
+            <div class="error" id="dobErr"></div>
+          </div>
+
+          <div class="input-box">
+            <span class="details">NIC</span>
+            <input type="text" placeholder="Enter your NIC" name="nic" >
+            <div class="error" id="nicErr"></div>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Address</span>
+            <textarea placeholder="Enter your Address" name="address"></textarea>
+            <div class="error" id="addressErr"></div>
+          </div>
+
+          <div class="input-box">
+            <span class="details">TelePhone Number</span>
+            <input type="tel" placeholder="0xxxxxxxxx" name="telephone" pattern="[0-9]{10}">
+            <div class="error" id="telephoneErr"></div>
+          </div>
+          <div class="input-box">
+            <span class="details">Z-Score</span>
+            <input type="number" placeholder="Enter Z-score" step="any" name="zscore">
+            <div class="error" id="zscoreErr"></div>
+          </div>
+        </div>
+
+
+        <div class="course-details">
+        <div class="title2"> Course Information </div>
+      
+        <div class="input-box">
+          <span class="details">Select the Courses & Options </span>
+            
+          <select name="course" id="course">
+            <option disabled selected value="">--None--</option>
+            <option value="physical">Physical Science</option>
+            <option value="bio">Bio Science</option>
+            <option value="cm">Computational Management</option>
+            <option value="sor">Statistical and operating system</option>
+          </select>
+          <div class="error" id="courseErr"></div>
+        </div>
+        <div class="input-box" id="combination" name="combination">
+          <div class="error" id="combErr"></div>
+        </div>
+        
+        <div class="button">
+          <input type="submit" value="SUBMIT" id="submit">
+          <input type="reset" value="RESET" id="reset">
+          
+        </div>
+        </div>
+        
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
