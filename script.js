@@ -157,7 +157,7 @@ function validateForm() {
         printError("courseErr", "Please select your course");
     } else {
         printError("courseErr", "");
-
+//test comment
         if(course=='physical' || course=='bio'){
             for(let i=1;i<6;i++){
                 let id='com'+i;
